@@ -1,0 +1,11 @@
+# compile
+gcc lib/*.c src/*.c main.c -o main -I./
+
+# execute
+./main
+
+# leak test on MacOS
+leaks -atExit -- ./main | grep LEAK:
+
+# all in
+gcc lib/*.c src/*.c main.c -o main -I./ && ./main && leaks -atExit -- ./main | grep LEAK:
