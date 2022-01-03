@@ -1,4 +1,4 @@
-# blockchain_test
+# BlockBlockCoin
 
 Barebone coin blockchain system for educational purposes
 
